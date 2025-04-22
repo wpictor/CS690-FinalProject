@@ -6,8 +6,6 @@
 # dotenv files
 .env
 
-hobby-sheet.txt
-
 # User-specific files
 *.rsuser
 *.suo
