@@ -20,6 +20,7 @@ class Program
                 .AddChoices("Back"));
         return response;
     }
+    
     static string fancySelectActivity(string message, List<string> selectList)
     {
         var response = AnsiConsole.Prompt(
@@ -67,7 +68,6 @@ class Program
                     List<string> hobbyList = new List<string>();
                     foreach(string hobbyLine in hobbyListContents.Split('\n')){
                             if(hobbyLine!=""){
-                                Console.WriteLine(hobbyLine);
                                 hobbyList.Add(hobbyLine);
                             }
                         }
@@ -103,8 +103,3 @@ class Program
     }
 }
 
-public class Activity
-{
-    public string name; 
-    public string priority;
-}
